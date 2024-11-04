@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Press Start 2P', sans-serif; /* Pixel retro font */
+    color: #0df;
+  }
+  
+  #clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px; /* Larger size for retro look */
+    height: 240px;
+    background: linear-gradient(145deg, #222, #333);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 127, 0.8), inset 0 0 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #ff007f; /* Retro neon border */
+  }
+  
+  #clock {
+    font-size: 2.2em; /* Balanced size */
+    color: #0df;
+    text-shadow: 0px 0px 15px rgba(13, 255, 127, 0.8), 0px 0px 20px rgba(13, 255, 127, 0.6); /* Neon glow */
+  }
+  
+  #close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #ff4f81; /* Neon pink */
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 10px rgba(255, 79, 129, 0.8);
+  }
+  
+  #close-button:hover {
+    color: #ff007f;
+    text-shadow: 0 0 15px rgba(255, 0, 127, 1);
+  }
+  
+  #close-button:focus {
+    outline: none;
+  }
+  
+  #toggle-button {
+    margin-top: 20px;
+    width: 50px; /* Circular pill shape */
+    height: 50px;
+    background-color: #ff007f; /* Bright neon pink */
+    border: 3px solid #ff4f81;
+    color: #1a1a1a;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 79, 129, 0.8); /* Retro neon glow */
+    font-weight: bold;
+  }
+  
+  #toggle-button:hover {
+    background-color: #ff4f81;
+    box-shadow: 0 0 15px rgba(255, 79, 129, 1);
+  }
+  
+  #toggle-button:focus {
+    outline: none;
+  }
